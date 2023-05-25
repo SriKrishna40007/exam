@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Navigation Bar</title>
+  <style>
+    /* Navigation bar styles */
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+    
+    /* Hamburger menu styles */
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+    
+    .hamburger .bar {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      margin: 4px 0;
+    }
+    
+    /* Media query for small screens */
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none;
+      }
+      
+      .navbar li {
+        display: block;
+        margin: 10px 0;
+      }
+      
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
