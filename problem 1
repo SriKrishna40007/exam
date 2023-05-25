@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Simple Page</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Simple Page</h1>
+  </header>
+  
+  <main>
+    <p>This is a paragraph of text.</p>
+    <img src="elephant.jpg" alt="Example Image" width="300" height="200">
+    <p>Click <a href="another_page.html">here</a> to go to another page.</p>
+  </main>
+</body>
+</html>
